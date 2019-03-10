@@ -10,7 +10,7 @@ public class Earthquake {
     private String mLocation;
 
     // Magnitude of the quake
-    private String mMagnitude;
+    private Double mMagnitude;
 
     // Date of the quake
     private String mDate;
@@ -20,7 +20,7 @@ public class Earthquake {
      *
      * assign variable names to the parameters passed in to the method
      * */
-    public Earthquake(String location, String magnitude, String date)
+    public Earthquake(String location, Double magnitude, String date)
     {
         mLocation = location;
         mMagnitude = magnitude;
@@ -37,7 +37,7 @@ public class Earthquake {
     /**
      * Getter method to get the location
      */
-    public String getMagnitude() {
+    public Double getMagnitude() {
         return mMagnitude;
     }
 
