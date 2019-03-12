@@ -66,7 +66,7 @@ public class CustomAdapter extends ArrayAdapter<Earthquake> {
 
         //Set text on those views
         locationTV.setText(currentEarthquake.getLocation());
-        magnitudeTV.setText(Double.toString(currentEarthquake.getMagnitude()));
+        magnitudeTV.setText(currentEarthquake.getMagnitude());
         dateTV.setText(currentEarthquake.getDate());
 
         //Return the whole list item layout so that it can be shown in the List view
