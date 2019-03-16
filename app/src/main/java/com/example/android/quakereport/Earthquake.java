@@ -10,21 +10,27 @@ public class Earthquake {
     private String mLocation;
 
     // Magnitude of the quake
-    private Double mMagnitude;
+    private double mMagnitude;
 
     // Date of the quake
-    private String mDate;
+    private Long mTimeInMilliseconds;
+
+    //website URL of the earthquake
+    private String mUrl;
+
+
 
     /*
      * Create a new Earthquake object.
      *
      * assign variable names to the parameters passed in to the method
      * */
-    public Earthquake(String location, Double magnitude, String date)
+    public Earthquake(String location, double magnitude, Long timeInMilliseconds, String Url)
     {
         mLocation = location;
         mMagnitude = magnitude;
-        mDate = date;
+        mTimeInMilliseconds = timeInMilliseconds;
+        mUrl = Url;
     }
 
     /**
@@ -37,15 +43,22 @@ public class Earthquake {
     /**
      * Getter method to get the location
      */
-    public Double getMagnitude() {
+    public double getMagnitude() {
         return mMagnitude;
     }
 
     /**
      * Getter method to get the location
      */
-    public String getDate() {
-        return mDate;
+    public Long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
+    }
+
+    /**
+     * Returns the website URL to find more information about the earthquake.
+     */
+    public String getUrl() {
+        return mUrl;
     }
 
 
